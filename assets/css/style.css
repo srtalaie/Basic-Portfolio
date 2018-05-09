@@ -1,0 +1,98 @@
+body{
+    background-color: beige;
+}
+
+.container{
+    display: flex;
+    width: 960px;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 2px 2px 2px lightgrey;
+    background-color: #ffffff;
+}
+
+.nav-menus{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+li:nth-child(1){
+    margin-right: 10px;
+}
+
+.menus{
+    display: flex;
+}
+
+.menus + .menus{
+    margin: 10px;
+    padding: 10px;
+    border-left: 1px solid lightgray;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li:nth-child(2){
+    margin-left: 10px;
+}
+
+h1{
+    background-color: #4aaaa5;
+    font-family: Georgia, Times, Times New Roman, serif;
+    padding: 15px;
+    font-size: 40px;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    float: left;
+    margin: 10px;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid lightgrey;;
+}
+
+section{
+    margin: 15px;
+    padding: 30px;
+    border: 2px solid lightgrey;
+    background-color: #ffffff;
+}
+
+article{
+    margin-top: 10px;
+}
+
+p{
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+p + p{
+    margin-top: 15px;
+}
+
+footer{
+    background-color: #666666;
+    border-top: 4px solid #4aaaa5;
+    text-align: center;
+}
