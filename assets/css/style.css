@@ -96,3 +96,25 @@ footer{
     border-top: 4px solid #4aaaa5;
     text-align: center;
 }
+
+.form-section{
+    margin: 15px;
+    padding: 30px;
+    border: 2px solid lightgrey;
+    background-color: #ffffff;
+}
+
+form{
+    padding-top: 10px;
+}
+
+form input, form p, form button, form textarea{
+    margin: 2px;
+}
+
+button{
+    background-color: #4aaaa5;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 15px;
+}
