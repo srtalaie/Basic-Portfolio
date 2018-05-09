@@ -1,2 +1,2 @@
 # Basic-Portfolio
-Homework Assignment- Basic Portfolio
+Homework Assignment 1 - Basic Portfolio
