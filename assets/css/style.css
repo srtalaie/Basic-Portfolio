@@ -6,7 +6,7 @@ body{
     display: flex;
     width: 960px;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px 200px;
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 }
 
@@ -117,4 +117,8 @@ button{
     font-size: 20px;
     text-align: center;
     padding: 5px 15px;
+}
+
+.port-holder{
+    margin: 0px 90px;
 }
