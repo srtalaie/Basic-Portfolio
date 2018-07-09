@@ -7,37 +7,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
 </head>
 <body>
-        <div class="container">
-            <header>
-                <h1 class="name">Sasha Talaie</h1>
-                <nav>
-                    <ul class="nav-menus">
-                        <li class="menus"><a href="./index.html">About</a></li>
-                        <li class="menus"><a href="./portfolio.html">Portfolio</a></li>
-                        <li class="menus"><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            
-            <div class="form-section">
-                <h2>Contact</h2>
-                <form action="" class="contact-form">
-                    <p>Name:</p>
-                    <input type="text" name="yourName"> <br>
-                    <p>Email:</p>
-                    <input type="email" name="yourEmail"> <br>
-                    <p>Message:</p>
-                    <textarea name="message" rows="15" cols="100">
-                    </textarea> <br>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+    <nav class="blue">
+        <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Sasha Talaie</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li class="menus"><a href="./index.html">About</a></li>
+            <li class="menus"><a href="./portfolio.html">Portfolio</a></li>
+            <li class="menus"><a href="./contact.html">Contact</a></li>
+        </ul>
+        </div>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li class="menus"><a href="./index.html">About</a></li>
+    <li class="menus"><a href="./portfolio.html">Portfolio</a></li>
+    <li class="menus"><a href="./contact.html">Contact</a></li>
+  </ul>
+    <div class="container">
+        <div class="row">
+            <h2>Contact</h2>
+        </div>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-filed col s6">
+                        <input placeholder="First Name" id="first-name" type="text" class="validate">
+                        <label for="last-name">First Name</label>
+                    </div>
+                    <div class="input-filed col s6">
+                        <input placeholder="Last Name" id="last-name" type="text" class="validate">
+                        <label for="last-name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Message</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="waves-effect waves-green btn grey">Submit</a>
+                </div>                
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p class="footer-text">&copy;Copyright</p>
+    </footer>
 
-            <footer>
-                <p class="footer-text">&copy;Copyright</p>
-            </footer>
-    </div>   
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+        $('#textarea1').val('Place Your Message Here');
+        M.textareaAutoResize($('#textarea1'));
+    </script>   
 </body>
 </html>

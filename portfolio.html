@@ -7,35 +7,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
 </head>
+  <nav class="blue">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Sasha Talaie</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li class="menus"><a href="./index.html">About</a></li>
+        <li class="menus"><a href="./portfolio.html">Portfolio</a></li>
+        <li class="menus"><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li class="menus"><a href="./index.html">About</a></li>
+    <li class="menus"><a href="./portfolio.html">Portfolio</a></li>
+    <li class="menus"><a href="./contact.html">Contact</a></li>
+  </ul>
 <body>
     <div class="container">
-            <header>
-                <h1 class="name">Sasha Talaie</h1>
-                <nav>
-                    <ul class="nav-menus">
-                        <li class="menus"><a href="./index.html">About</a></li>
-                        <li class="menus"><a href="./portfolio.html">Portfolio</a></li>
-                        <li class="menus"><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <section class="portfolio">
-                <h2>Portfolio</h2>
-                <div class="port-holder">
-                    <a href="#" target="_blank"><img class="portfolio-item" src="assets/images/200x200.png" title="Project-1"></a>
-                    <a href="#" target="_blank"><img class="portfolio-item" src="assets/images/200x200.png" title="Project-2"></a>
-                    <a href="#" target="_blank"><img class="portfolio-item" src="assets/images/200x200.png" title="Project-3"></a>
-                    <a href="#" target="_blank"><img class="portfolio-item" src="assets/images/200x200.png" title="Project-4"></a>
-                    <a href="#" target="_blank"><img class="portfolio-item" src="assets/images/200x200.png" title="Project-5"></a>
-                    <a href="#" target="_blank"><img class="portfolio-item" src="assets/images/200x200.png" title="Project-6"></a>
-                </div>
-            </section>
-
-            <footer>
-                <p class="footer-text">&copy;Copyright</p>
-            </footer>
+        <div class="row">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="row">
+            <div class="col s4">
+                <a href="https://stannous2.github.io/Project1/" target="_blank"><img class="responsive-img" src="assets/images/200x200.png" title="RoadTrip Buddy"></a>
+                <p>RoadTrip Buddy</p>
+            </div>
+            <div class="col s4">
+                <a href="https://srtalaie.github.io/landing-page-template-1/" target="_blank"><img class="responsive-img" src="assets/images/200x200.png" title="Landing Page"></a>
+                <p>Landing Page Template</p>
+            </div>
+            <div class="col s4">
+                <a href="https://srtalaie.github.io/Train-Scheduler/" target="_blank"><img class="responsive-img" src="assets/images/200x200.png" title="Train Scheduler"></a>
+                <p>Train Scheduler</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s4">
+                <a href="https://srtalaie.github.io/crystals-collector/" target="_blank"><img class="responsive-img" src="assets/images/200x200.png" title="Crystals Collector"></a>
+                <p>Crystals Collector</p>
+            </div>
+            <div class="col s4">
+                <a href="https://srtalaie.github.io/Random-ASOIAF-House-Generator/" target="_blank"><img class="responsive-img" src="assets/images/200x200.png" title="ASOIAF House Generator"></a>
+                <p>ASOIAF House Generator</p>
+            </div>
+            <div class="col s4">
+                <a href="https://srtalaie.github.io/GIPHY-API-App/" target="_blank"><img class="responsive-img" src="assets/images/200x200.png" title="GIPHY API App"></a>
+                <p>GIPHY API App</p>
+            </div>
+        </div>
     </div>
+    <footer>
+        <p class="footer-text">&copy;Copyright</p>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
+</script>
 </body>
 </html>
