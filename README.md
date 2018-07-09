@@ -1,2 +1,4 @@
 # Basic-Portfolio
-Homework Assignment 1 - Basic Portfolio
+My Portfolio
+
+https://srtalaie.github.io/Basic-Portfolio/
