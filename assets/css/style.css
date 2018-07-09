@@ -42,6 +42,23 @@ footer{
     bottom: 0px;
     width: 100%;
     background-color: #2196F3;
-    border-top: 4px solid darkgray;
+    border-top: 4px solid darkgrey;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-items{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-right{
+    margin-right: 10px;
+}
+
+.footer-items a{
+    color: white;
 }
