@@ -1,11 +1,12 @@
 body{
-    background-image: url("../images/bg.png");
-    background-size: cover;
+    background-image: url("../images/bg.jpg");
+    /* background-size: cover; */
 }
 
 .container{
-    background-color: white;
+    background-color: #f5efef;
     box-shadow: 2px 2px 2px 2px black;
+    margin-bottom: 40px;
 }
 
 .about{
@@ -16,7 +17,7 @@ h1{
     background-color: #4aaaa5;
     font-family: Georgia, Times, Times New Roman, serif;
     padding: 15px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .profile-pic{
@@ -27,7 +28,7 @@ h1{
 h2{
     font-size: 30px;
     font-weight: bold;
-    border-bottom: 2px solid lightgrey;;
+    border-bottom: 2px solid slategray;;
 }
 
 p{
@@ -63,4 +64,8 @@ footer{
 
 .footer-items a{
     color: white;
+}
+
+.form, .submit-btn{
+    margin: 5px;
 }
